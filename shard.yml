@@ -1,11 +1,11 @@
-name: fifteenfortyfive
+name: lunch
 version: 0.1.0
 license: MIT
 authors:
   - Jon Egeland <jonegeland@gmail.com>
 
 description: |
-  Home page and management site for the 1545.
+  Eating lunch in downtown Cincinnati.
 
 
 dependencies:

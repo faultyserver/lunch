@@ -1,5 +1,6 @@
-display_name: 1545 website
+display_name: Gaslight Lunch
 info: true
+build: crystal build ./src/lunch.cr --no-debug
 watch:
-  - src/fifteenfortyfive/**/*.cr
-  - src/fifteenfortyfive/**/*.slang
+  - src/lunch/**/*.cr
+  - src/lunch/**/*.slang
