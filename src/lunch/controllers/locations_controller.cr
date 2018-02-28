@@ -34,7 +34,7 @@ module LocationsController
     changeset = Repo.insert(location)
 
     if changeset.valid?
-      env.redirect("/locations/show/#{location.id}")
+      env.redirect("/locations/show/#{changeset.instance.id}")
     else
       render_view "locations/new"
     end

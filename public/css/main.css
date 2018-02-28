@@ -23,8 +23,6 @@ nav.navbar a.navbar-brand {
 .sey-container {
   display: none;
   position: absolute;
-  top: 43px;
-  width: 100%;
   background-color: #fcfcfd;
   border: 1px solid #a4a4a8;
   border-bottom-left-radius: 4px;
@@ -40,7 +38,8 @@ nav.navbar a.navbar-brand {
   list-style-type: none; }
 
 .sey-show {
-  display: block; }
+  display: block;
+  width: 100%; }
 
 .sey-hide {
   display: none; }
@@ -71,12 +70,6 @@ nav.navbar a.navbar-brand {
   font-style: italic;
   font-size: 12px;
   padding: 7px; }
-
-.autocomplete__boxart {
-  width: 60px; }
-
-.autocomplete__content {
-  padding: 12px; }
 
 .account-box {
   padding: 12px; }
@@ -317,6 +310,7 @@ nav.navbar {
     cursor: pointer; }
 
 .form__field {
+  position: relative;
   width: 100%;
   padding: 4px 8px;
   margin: 8px 0;
@@ -359,6 +353,20 @@ nav.navbar {
 textarea.form__input {
   height: 3em; }
 
+select.form__input {
+  position: relative;
+  height: 1.5em;
+  margin-top: -2px;
+  background-image: url(data:image/svg+xml;utf8;base64,PD94bWwgdmVyc2lvbj0iMS4wIiBlbmNvZGluZz0iaXNvLTg4NTktMSI/Pgo8c3ZnIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyIgeG1sbnM6eGxpbms9Imh0dHA6Ly93d3cudzMub3JnLzE5OTkveGxpbmsiIHZlcnNpb249IjEuMSIgeD0iMHB4IiB5PSIwcHgiIHZpZXdCb3g9IjAgMCA0MDUuNDU2IDQwNS40NTYiIHN0eWxlPSJlbmFibGUtYmFja2dyb3VuZDpuZXcgMCAwIDQwNS40NTYgNDA1LjQ1NjsiIHhtbDpzcGFjZT0icHJlc2VydmUiIHdpZHRoPSIxNnB4IiBoZWlnaHQ9IjE2cHgiPgo8Zz4KICA8cGF0aCBkPSJNNzQuMTM0LDY0LjE0N2MtNC45ODUsMC4wNzgtOS45MTEsMi4xNjMtMTMuNDM4LDUuNjg4bC01NSw1NUMyLjA5NiwxMjguNDMyLDAsMTMzLjQ5MiwwLDEzOC41ODMgICBzMi4wOTYsMTAuMTUxLDUuNjk3LDEzLjc1bDE4My4yODEsMTgzLjI4MWMzLjU5OSwzLjYwMSw4LjY1OSw1LjY5NywxMy43NSw1LjY5N3MxMC4xNTEtMi4wOTYsMTMuNzUtNS42OTdsMTgzLjI4MS0xODMuMjgxICAgYzMuNjAxLTMuNTk5LDUuNjk3LTguNjU5LDUuNjk3LTEzLjc1cy0yLjA5Ni0xMC4xNTEtNS42OTctMTMuNzVsLTU1LTU1Yy0zLjU5OC0zLjU5MS04LjY1MS01LjY4MS0xMy43MzQtNS42ODEgICBjLTUuMDgzLDAtMTAuMTM2LDIuMDktMTMuNzM0LDUuNjgxTDIwMi43MjgsMTg0LjM5N0w4OC4xNjYsNjkuODMzQzg0LjQ5OSw2Ni4xNjksNzkuMzE4LDY0LjA3LDc0LjEzNCw2NC4xNDdMNzQuMTM0LDY0LjE0N3oiIGZpbGw9IiNENjQ4NDgiLz4KPC9nPgo8L3N2Zz4K);
+  background-position: right top 80%;
+  background-repeat: no-repeat;
+  line-height: normal;
+  text-indent: 0.01px;
+  text-overflow: ellipsis;
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  appearance: none; }
+
 .form__label {
   flex: 0 0 55px;
   text-align: right;
@@ -398,6 +406,13 @@ textarea.form__input {
   .form__button:active {
     background-color: #f7dada;
     text-decoration: none; }
+
+.form__typeahead-container {
+  display: block;
+  width: 100%; }
+  .form__typeahead-container input {
+    display: block;
+    width: 100%; }
 
 .hero-box__container {
   display: flex;

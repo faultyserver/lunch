@@ -19,6 +19,15 @@ scope "/locations" do
   post  "/update/:location_id",   &->LocationsController.update(Krout::Env)
 end
 
+scope "/events" do
+  get   "/",                    &->EventsController.index(Krout::Env)
+  get   "/show/:event_id",      &->EventsController.show(Krout::Env)
+  get   "/new",                 &->EventsController._new(Krout::Env)
+  post  "/create",              &->EventsController.create(Krout::Env)
+  get   "/edit/:event_id",      &->EventsController.edit(Krout::Env)
+  post  "/update/:event_id",    &->EventsController.update(Krout::Env)
+end
+
 
 get "/", &->StaticController.index(Krout::Env)
 
